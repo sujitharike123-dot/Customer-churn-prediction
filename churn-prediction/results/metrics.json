@@ -1,0 +1,42 @@
+{
+  "data_file": "data/telco_churn.csv",
+  "rows_loaded": 7043,
+  "rows_after_cleaning": 7043,
+  "duplicates_dropped": 0,
+  "blank_total_charges_filled": 11,
+  "overall_churn_rate_pct": 26.5,
+  "test_set_size": 1409,
+  "metrics": {
+    "Logistic Regression": {
+      "accuracy": 0.7381,
+      "precision": 0.5043,
+      "recall": 0.7834,
+      "f1": 0.6136,
+      "roc_auc": 0.8416
+    },
+    "Random Forest": {
+      "accuracy": 0.7615,
+      "precision": 0.5349,
+      "recall": 0.7781,
+      "f1": 0.634,
+      "roc_auc": 0.8407
+    }
+  },
+  "best_model": "Logistic Regression",
+  "logistic_recall_without_class_weights": 0.5588,
+  "top_drivers": [
+    "Contract_Month-to-month",
+    "tenure",
+    "TotalCharges",
+    "MonthlyCharges",
+    "Contract_Two year"
+  ],
+  "retention_targeting": {
+    "contacted_pct": 20,
+    "customers_contacted": 281,
+    "churners_captured": 186,
+    "total_churners_in_test": 374,
+    "pct_of_churners_captured": 49.7,
+    "lift_vs_random": 2.49
+  }
+}
